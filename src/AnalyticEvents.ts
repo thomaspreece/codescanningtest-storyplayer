@@ -54,6 +54,7 @@ const AnalyticEvents: AnalyticEvents = {
     names: names.reduce((events, eventName) => {
         // eslint-disable-next-line no-param-reassign
         events[eventName] = eventName
+        const event = eventName
         return events
     }, {}),
     types: types.reduce((events, eventName) => {
